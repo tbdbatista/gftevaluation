@@ -6,7 +6,51 @@ public class Modelo {
     private int altura;
     private int peso;
     private int idade;
+    private String trabalho;
 
+    public String getTrabalho() {
+        return trabalho;
+    }
+
+    protected void setTrabalho() {
+        this.trabalho = "Malhação";
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public int getAltura() {
+        return altura;
+    }
+
+    public void setAltura(int altura) {
+        this.altura = altura;
+    }
+
+    public int getPeso() {
+        return peso;
+    }
+
+    public void setPeso(int peso) {
+        this.peso = peso;
+    }
+
+    public int getIdade() {
+        return idade;
+    }
+
+    public void setIdade(int idade) {
+        this.idade = idade;
+    }
+
+    public void mostrarDados(){
+        System.out.println(Modelo);
+    }
 }
 
 

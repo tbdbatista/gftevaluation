@@ -1,6 +1,18 @@
 package modelo;
 
 public class Ator extends Modelo{
+
+    private String nome;
+    private int altura;
+    private int peso;
+    private int idade;
+    private String trabalho;
+
+    @Override
+    protected void setTrabalho() {
+        this.trabalho = "Novelas";
+    }
+
 }
 
 

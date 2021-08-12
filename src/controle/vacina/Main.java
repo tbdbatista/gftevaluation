@@ -10,7 +10,7 @@ public class Main {
         String dataPrimeiraDose;
         Scanner inputNum = new Scanner(System.in);
         Scanner inputData = new Scanner(System.in);
-        LocalDate localDate = LocalDate.now();
+
 
         System.out.println("*******************************************");
         System.out.println("*     Sistema de controle de vacinas      *");

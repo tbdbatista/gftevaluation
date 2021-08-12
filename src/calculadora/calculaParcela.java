@@ -6,30 +6,54 @@ public class calculaParcela {
 
     public static void main(String[] args) {
 
-        Scanner inputText = new Scanner(System.in);
         Scanner inputNum = new Scanner(System.in);
-        Double valorMoto;
+        double valorMoto;
+        double novoValor;
+        double parcelas;
 
         System.out.println("Insira o valor da moto: ");
         valorMoto = inputNum.nextDouble();
 
         System.out.println("As opções de pagamento são: ");
-        System.out.println("Valor a vista com 30% de desconto, R$ " + (valorMoto - (valorMoto*0.3)));
-        System.out.println("Em 5 vezes com acréscimo de 4%." +
-                " Com valor total de R$ " + (valorMoto + (valorMoto*0.04)) + ". Com parcelas de R$ " +
-                ((valorMoto + (valorMoto*0.04))/5));
-        System.out.println("Em 11 vezes com acréscimo de 4%." +
-                " Com valor total de R$ " + (valorMoto + (valorMoto*0.07)) + ". Com parcelas de R$ " +
-                ((valorMoto + (valorMoto*0.07))/11));
-        System.out.println("Em 17 vezes com acréscimo de 4%." +
-                " Com valor total de R$ " + (valorMoto + (valorMoto*0.10)) + ". Com parcelas de R$ " +
-                ((valorMoto + (valorMoto*0.10))/17));
-        System.out.println("Em 23 vezes com acréscimo de 4%." +
-                " Com valor total de R$ " + (valorMoto + (valorMoto*0.13)) + ". Com parcelas de R$ " +
-                ((valorMoto + (valorMoto*0.13))/23));
-        System.out.println("Em 29 vezes com acréscimo de 4%." +
-                " Com valor total de R$ " + (valorMoto + (valorMoto*0.16)) + ". Com parcelas de R$ " +
-                ((valorMoto + (valorMoto*0.16))/29));
+
+        novoValor = (valorMoto - (valorMoto*0.3));
+        System.out.print("Valor a vista com 30% de desconto, R$ ");
+        System.out.printf("%.2f", novoValor);
+
+        novoValor = (valorMoto + (valorMoto*0.04));
+        parcelas = novoValor/5;
+        System.out.print("\nEm 5 vezes com acréscimo de 4%. Com valor total de R$ ");
+        System.out.printf("%.2f", novoValor);
+        System.out.print(". Com parcelas de R$ ");
+        System.out.printf("%.2f", parcelas);
+
+        novoValor = (valorMoto + (valorMoto*0.07));
+        parcelas = novoValor/11;
+        System.out.print("\nEm 11 vezes com acréscimo de 7%. Com valor total de R$ ");
+        System.out.printf("%.2f", novoValor);
+        System.out.print(". Com parcelas de R$ ");
+        System.out.printf("%.2f", parcelas);
+
+        novoValor = (valorMoto + (valorMoto*0.10));
+        parcelas = novoValor/17;
+        System.out.print("\nEm 17 vezes com acréscimo de 10%. Com valor total de R$ ");
+        System.out.printf("%.2f", novoValor);
+        System.out.print(". Com parcelas de R$ ");
+        System.out.printf("%.2f", parcelas);
+
+        novoValor = (valorMoto + (valorMoto*0.13));
+        parcelas = novoValor/23;
+        System.out.print("\nEm 23 vezes com acréscimo de 13%. Com valor total de R$ ");
+        System.out.printf("%.2f", novoValor);
+        System.out.print(". Com parcelas de R$ ");
+        System.out.printf("%.2f", parcelas);
+
+        novoValor = (valorMoto + (valorMoto*0.16));
+        parcelas = novoValor/29;
+        System.out.print("\nEm 29 vezes com acréscimo de 16%. Com valor total de R$ ");
+        System.out.printf("%.2f", novoValor);
+        System.out.print(". Com parcelas de R$ ");
+        System.out.printf("%.2f", parcelas);
 
     }
 }
